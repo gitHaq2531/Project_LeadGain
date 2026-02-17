@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.client.LeadGain.Register.OnlyApi">
+        <methods>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- com.client.LeadGain.Register.OnlyApi -->
+      <class name="com.client.LeadGain.Register.LoginTest">
+        <methods>
+          <include name="beforeSuitConfig"/>
+          <include name="loginTest"/>
+          <include name="afterMethodConfig"/>
+          <include name="AfterSuiteConfig"/>
+          <include name="beforeClassConfig"/>
+          <include name="afterClassConfig"/>
+          <include name="beforeMethodConfig"/>
+        </methods>
+      </class> <!-- com.client.LeadGain.Register.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
