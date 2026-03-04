@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.client.LeadGain.Register.RetryTest">
+      <class name="practiceScenarios.Amazon">
         <methods>
-          <include name="retryTestMethod"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- com.client.LeadGain.Register.RetryTest -->
+      </class> <!-- practiceScenarios.Amazon -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
