@@ -6,6 +6,7 @@ public class GitBashDemo {
 	{
 		// TODO Auto-generated method stub
 		System.out.println("working with GitBash");
+		System.out.println("tl update");
 
 	}
 
