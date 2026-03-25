@@ -10,7 +10,9 @@ public class GitBashDemo {
 		System.out.println("tl update");
 		System.out.println("demo");
 		System.out.println("tl update2");
+		System.out.println("task one ");
 		System.out.println("tl update3");
+
 	}
 
 }
