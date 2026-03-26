@@ -1,7 +1,7 @@
 package GitBash;
 
-public class GitBashDemo {
-
+public class GitBashDemo 
+{
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
@@ -12,5 +12,4 @@ public class GitBashDemo {
 		System.out.println("tl update2");
 		System.out.println("tl update3");
 	}
-
 }
