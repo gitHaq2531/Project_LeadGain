@@ -26,6 +26,10 @@ public WebElement getPasswordEdt() { return passwordEdt;}
 private WebElement submitButton;
 public WebElement getSubmitButton() { return submitButton;}
 
+@FindBy(className = "errorMessage")
+private WebElement errorMessage;
+public WebElement getErrorMessage() { return errorMessage; }
+
 public void loginToApplication(String username, String password)
 {
 	getUsernameEdt().sendKeys(username);

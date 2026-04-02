@@ -41,7 +41,7 @@ public class ListenerImpClassUtility implements ITestListener, ISuiteListener
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		if(result.getInstance() instanceof BaseClass) {
+		if(result.getInstance() instanceof MasterBaseClass) {
 		ThreadSafeUtility.getTest().log(Status.FAIL, result.getThrowable());
 		TakesScreenshot ts = (TakesScreenshot)ThreadSafeUtility.getDriver();
 		String filepath = ts.getScreenshotAs(OutputType.BASE64);

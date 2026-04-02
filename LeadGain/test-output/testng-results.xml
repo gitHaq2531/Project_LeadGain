@@ -2,16 +2,47 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-20T17:15:29 IST" name="Default suite" finished-at="2026-02-20T17:16:03 IST" duration-ms="34717">
+  <suite started-at="2026-04-02T15:17:09 IST" name="Default suite" finished-at="2026-04-02T15:19:20 IST" duration-ms="131689">
     <groups>
     </groups>
-    <test started-at="2026-02-20T17:15:29 IST" name="Default test" finished-at="2026-02-20T17:16:03 IST" duration-ms="34717">
-      <class name="practiceScenarios.Amazon">
-        <test-method signature="test1()[pri:0, instance:practiceScenarios.Amazon@799f10e1]" started-at="2026-02-20T17:15:29 IST" name="test1" finished-at="2026-02-20T17:16:03 IST" duration-ms="34656" status="PASS">
+    <test started-at="2026-04-02T15:17:09 IST" name="Default test" finished-at="2026-04-02T15:19:20 IST" duration-ms="131689">
+      <class name="com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest">
+        <test-method is-config="true" signature="beforeSuitConfig()[pri:0, instance:com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest@5542c4ed]" started-at="2026-04-02T15:17:09 IST" name="beforeSuitConfig" finished-at="2026-04-02T15:17:09 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1 -->
-      </class> <!-- practiceScenarios.Amazon -->
+        </test-method> <!-- beforeSuitConfig -->
+        <test-method is-config="true" signature="beforeClassConfig(org.testng.xml.XmlTest)[pri:0, instance:com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest@5542c4ed]" started-at="2026-04-02T15:17:09 IST" name="beforeClassConfig" finished-at="2026-04-02T15:17:11 IST" duration-ms="2426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.xml.XmlTest@76c1bbbc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassConfig -->
+        <test-method is-config="true" signature="beforeMethodConfig()[pri:0, instance:com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest@5542c4ed]" started-at="2026-04-02T15:17:11 IST" name="beforeMethodConfig" finished-at="2026-04-02T15:17:14 IST" duration-ms="2276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodConfig -->
+        <test-method signature="verifyClockCityDropDownListSelection()[pri:0, instance:com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest@5542c4ed]" started-at="2026-04-02T15:17:14 IST" name="verifyClockCityDropDownListSelection" finished-at="2026-04-02T15:19:19 IST" duration-ms="125227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClockCityDropDownListSelection -->
+        <test-method is-config="true" signature="afterMethodConfig()[pri:0, instance:com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest@5542c4ed]" started-at="2026-04-02T15:19:19 IST" name="afterMethodConfig" finished-at="2026-04-02T15:19:20 IST" duration-ms="1287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodConfig -->
+        <test-method is-config="true" signature="afterClassConfig()[pri:0, instance:com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest@5542c4ed]" started-at="2026-04-02T15:19:20 IST" name="afterClassConfig" finished-at="2026-04-02T15:19:20 IST" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClassConfig -->
+        <test-method is-config="true" signature="AfterSuiteConfig()[pri:0, instance:com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest@5542c4ed]" started-at="2026-04-02T15:19:21 IST" name="AfterSuiteConfig" finished-at="2026-04-02T15:19:21 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuiteConfig -->
+      </class> <!-- com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practiceScenarios.Amazon">
+      <class name="com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest">
         <methods>
-          <include name="test1"/>
+          <include name="AfterSuiteConfig"/>
+          <include name="afterClassConfig"/>
+          <include name="afterMethodConfig"/>
+          <include name="beforeSuitConfig"/>
+          <include name="verifyClockCityDropDownListSelection"/>
+          <include name="beforeClassConfig"/>
+          <include name="beforeMethodConfig"/>
         </methods>
-      </class> <!-- practiceScenarios.Amazon -->
+      </class> <!-- com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

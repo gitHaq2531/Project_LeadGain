@@ -31,6 +31,25 @@ public class ExcelUtility {
 		return data;
 	}
 	
+	public String getDataFromEXcelFile(String path,int rowIndex, int cellIndex)
+	{
+		String data="";
+		try {
+			FileInputStream fis=new FileInputStream(path);
+			Workbook workbook = WorkbookFactory.create(fis);
+			Sheet sheet = workbook.getSheet("Sheet1");
+		Row row = sheet.getRow(rowIndex);
+		Cell cell = row.getCell(cellIndex);
+		data = cell.toString();
+		workbook.close();
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+		return data;
+	}
+
+	
 	public void setDataIntoExcelFile(int rowIndex, int cellIndex, String value)
 	{
 		try {
@@ -68,6 +87,38 @@ public class ExcelUtility {
 	}
 	
 	public int getCellCount(int rowIndex)
+	{
+		int cellCount=0;
+		try {
+			FileInputStream fis=new FileInputStream(path);
+			Workbook workbook = WorkbookFactory.create(fis);
+			Sheet sheet = workbook.getSheet("Sheet1");
+		cellCount = sheet.getRow(rowIndex).getLastCellNum();
+		workbook.close();
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+		return cellCount;
+	}
+	
+	public int getRowIndex(String path)
+	{
+		int data=0;
+		try {
+			FileInputStream fis=new FileInputStream(path);
+			Workbook workbook = WorkbookFactory.create(fis);
+			Sheet sheet = workbook.getSheet("Sheet1");
+		data = sheet.getLastRowNum();
+		workbook.close();
+		}
+		catch (Exception e) {
+			// TODO: handle exception
+		}
+		return data;
+	}
+	
+	public int getCellCount(String path,int rowIndex)
 	{
 		int cellCount=0;
 		try {
