@@ -6,10 +6,10 @@
       <class name="com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest">
         <methods>
           <include name="AfterSuiteConfig"/>
+          <include name="searchBoxDropDownTest"/>
           <include name="afterClassConfig"/>
           <include name="afterMethodConfig"/>
           <include name="beforeSuitConfig"/>
-          <include name="verifyClockCityDropDownListSelection"/>
           <include name="beforeClassConfig"/>
           <include name="beforeMethodConfig"/>
         </methods>

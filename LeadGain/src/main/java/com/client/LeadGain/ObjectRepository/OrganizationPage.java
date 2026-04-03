@@ -53,4 +53,37 @@ public WebElement getClockPopup() { return clockPopup;}
 @FindBy(name = "clockcity")
 private WebElement clockCityDropDown;
 public WebElement getClockCityDropDown() { return clockCityDropDown;}
+
+@FindBy(css = "input[value='Mass Edit']")
+private WebElement massEditButton;
+public WebElement getMassEditButton() { return massEditButton;}
+
+@FindBy(xpath = "//a[@title='Organizations']/parent::td/parent::tr//input[@type='checkbox']")
+private List<WebElement> orgListCheckBoxes;
+public List<WebElement> getOrgListCheckBoxes(){ return orgListCheckBoxes;}
+
+@FindBy(xpath = "//td[text()='Website ']/parent::tr//input[@name='website']")
+private WebElement websiteTextEdt;
+public WebElement getWebsiteTextEdt() { return websiteTextEdt;}
+
+@FindBy(css = "input[title='Save [Alt+S]']")
+private WebElement saveButton;
+public WebElement getSaveButton() { return saveButton;}
+
+@FindBy(xpath = "//span[@vtfieldname='website']/parent::td/a")
+private List<WebElement> orgwebsiteList;
+public List<WebElement> getOrgWebsiteList() { return orgwebsiteList;}
+
+@FindBy(css = "img[src='themes/images/arrow_down_black.png']")
+private WebElement searchBoxDropDownIcon;
+public WebElement getSearchBoxDropDownIcon() { return searchBoxDropDownIcon;}
+
+@FindBy(xpath = "//input[@type='checkbox' and @name='search_onlyin']")
+private List<WebElement> allModulesCheckBoxesUnderSearch;
+public List<WebElement> getAllModulesCheckBoxesUnderSearch() { return allModulesCheckBoxesUnderSearch;}
+
+@FindBy(linkText = "Select All")
+private WebElement selectAllLInkforAllModulesCheckbox;
+public WebElement getSelectAllLInkforAllModulesCheckbox() { return selectAllLInkforAllModulesCheckbox;}
+
 }

@@ -1,10 +1,11 @@
 package com.TY.LeadGain.OrganizationModule;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import com.client.LeadGain.GenericUtility.BaseClass;
 import com.client.LeadGain.ObjectRepository.OrganizationPage;
 
@@ -23,6 +24,7 @@ public class OrganizationPageIconTest extends BaseClass
 		public void verifyCalendarPopupVisibility() throws InterruptedException
 		{
 			OrganizationPage orgPage = homePageObject.clickOnOrgLink();
+			Assert.assertFalse(orgPage.getCalendarPopup().isDisplayed());
 			orgPage.getCalendarIcon().click();
 			Assert.assertTrue(orgPage.getCalendarPopup().isDisplayed());
 			orgPage.getCloseCalendarIcon().click();
@@ -47,6 +49,21 @@ public class OrganizationPageIconTest extends BaseClass
 			{
 				clockCityDropDownSelect.selectByIndex(i);
 				Assert.assertEquals(clockCityDropDownSelect.getFirstSelectedOption().getText(), clockCityDropDownSelect.getOptions().get(i).getText());
+			}
+		}
+		@Test
+		public void searchBoxDropDownTest()
+		{
+			OrganizationPage orgPage = homePageObject.clickOnOrgLink();
+			orgPage.getSearchBoxDropDownIcon().click();
+			List<WebElement> allModulesCheckBoxesUnderSearch = orgPage.getAllModulesCheckBoxesUnderSearch();
+			for (WebElement checkbox : allModulesCheckBoxesUnderSearch) {
+				Assert.assertFalse(checkbox.isSelected());
+			}
+			System.out.println("===============");
+			orgPage.getSelectAllLInkforAllModulesCheckbox().click();
+			for (WebElement checkbox : allModulesCheckBoxesUnderSearch) {
+				Assert.assertTrue(checkbox.isSelected());
 			}
 		}
 }
