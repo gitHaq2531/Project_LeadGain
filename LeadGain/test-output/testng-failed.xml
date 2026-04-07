@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest">
+      <class name="com.TY.LeadGain.OrganizationModule.SearchOrganizationTest">
         <methods>
           <include name="AfterSuiteConfig"/>
-          <include name="searchBoxDropDownTest"/>
           <include name="afterClassConfig"/>
           <include name="afterMethodConfig"/>
           <include name="beforeSuitConfig"/>
+          <include name="searchOrgWithAlphabetOptionsTest"/>
           <include name="beforeClassConfig"/>
           <include name="beforeMethodConfig"/>
         </methods>
-      </class> <!-- com.TY.LeadGain.OrganizationModule.OrganizationPageIconTest -->
+      </class> <!-- com.TY.LeadGain.OrganizationModule.SearchOrganizationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,7 @@ package com.client.LeadGain.ObjectRepository;
 
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -86,4 +87,21 @@ public List<WebElement> getAllModulesCheckBoxesUnderSearch() { return allModules
 private WebElement selectAllLInkforAllModulesCheckbox;
 public WebElement getSelectAllLInkforAllModulesCheckbox() { return selectAllLInkforAllModulesCheckbox;}
 
+public WebElement getEditOrgLink(WebDriver driver,String orgName)
+{
+	return driver.findElement(By.xpath("//a[text()='"+orgName+"']/ancestor::tr[@id]//a[text()='edit']"));
+}
+public WebElement getDeleteOrgLink(WebDriver driver,String orgName)
+{
+	return driver.findElement(By.xpath("//a[text()='"+orgName+"']/ancestor::tr[@id]//a[text()='del']"));
+}
+
+@FindBy(xpath = "//td[contains(@class,'searchAlph')]")
+private List<WebElement> searchAlphabets;
+public List<WebElement> getSearchAlphabetsList() { return searchAlphabets;}
+
+public List<WebElement> getOrgNameList(WebDriver driver,int a,int b){
+//	char a1=a
+return driver.findElements(By.xpath("//a[@title='Organizations' and (starts-with(text(),'"+a+"') or  starts-with(text(),'a'))]"));
+}
 }
